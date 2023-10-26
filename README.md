@@ -51,12 +51,10 @@ In summary, we recommend that software developers employ the O-Bagging algorithm
 - [Configuration.py](./Configuration.py): Specify the path configuration for the entire project.
 - [LinearLTR.py](./LinearLTR.py): The implementation of the EALTR method.
 - [SimpleReinforcementMethod.py](./SimpleReinforcementMethod.py): The implementation of the ordinal classification method.
-![img.png](images/ordinal-img.png)
 - [RankSVM.py](./RankSVM.py): The implementation of the RankSVM algorithm.
 - [rankboostYin.py](./rankboostYin.py): The process of implementing the 6 pairwise and listwise algorithms by calling the ```RankLib.jar``` package.
 - [heat_map_pic.py](./heat_map_pic.py): Draw heatmaps.
 - [SKESD_test.py](./SKESD_test.py): Process SKESD data.
-![img.png](images/skesd-img.png)
 - [Wilcoxon_pvalue_cliff.py](./Wilcoxon_pvalue_cliff.py): The calculation of the Wilcoxon test and cliff value.
 
 ## Citation
