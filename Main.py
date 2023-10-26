@@ -58,7 +58,7 @@ def get_origin_xy(path):
     return data_x, data_y
 
 
-def process_data(path, data_type, process_type):
+def process_data(path, data_type):
     """
     Train on different models for each dataset to obtain the model performance.
     :param path: Location of the dataset files.
@@ -360,17 +360,19 @@ def process_data(path, data_type, process_type):
     pr.cal_all(cf.prediction_path)
 
 
-
 def do_run():
+
+    # Run model
+    for data_type, path in cf.datasets_location.items():
+            process_data(path, data_type, "")
+
     # Calculate the average value and replace NaN values.
     cal_all(cf.origin_results_path, "median")
     # 1. Convert the generated data into comparative data.
     transform_result(cf.origin_results_path, cf.transform_path)
-    # 2. Convert the data into median and mean values for heat.
-    gen_heat_result("mean")
+    # 2. Convert the data into median or mean values for heat.
     gen_heat_result("median")
     # 3. Generate a PDF for the heat.
-    do_draw("mean")
     do_draw("median")
     # 4. Execute the generated comparative data in R language.
     # 5. Generate SK-ESD results.

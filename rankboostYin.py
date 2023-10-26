@@ -104,6 +104,7 @@ def RankalgorithmCreatedata(trainX, trainY, testX, testY, filename):
     test_dat_path = create_datYin("test", filename, testX, testY)
     return train_dat_path, test_dat_path
 
+
 def RankalgorithmTrainandtest(ranker, filename, train_dat_path, test_dat_path):
     model_path = train_modelYin(ranker, train_dat_path)
     result_dat_path = pred_test_dataYin(test_dat_path, model_path)
