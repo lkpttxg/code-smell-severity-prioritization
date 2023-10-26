@@ -7,8 +7,6 @@ Furthermore, we propose the adoption of Severity@20\% and Cumulative Lift Chart 
 
 ![img.png](images/framework-img.png)
 
-![img.png](images/algorithms-img.png)
-
 
 The results show that:
 - (1) The ordinal Bagging (O-Bagging) algorithm demonstrates the best performance in code smell severity prioritization, achieving superior results in terms of Severity@20\% and CLC.
@@ -46,7 +44,7 @@ In summary, we recommend that software developers employ the O-Bagging algorithm
 - [predication](./prediction): The direct storage location for the model's running results.
 - [empirical_results](./emprical_results): The storage location for the processed experimental data, including median values, skewness values, and statistical test values.
 - [RCode](./RCode): The R script we run for SKESD test. Note that it should be executed in the R environment.
-- [dat_file](./dat_file), [model](./model), [test_result](./test_result)```: The intermediate generated split datasets, models, and test results when executing the 6 models in pairlist and wiselist.
+- [dat_file](./dat_file), [model](./model), [test_result](./test_result): The intermediate generated split datasets, models, and test results when executing the 6 models in pairlist and wiselist.
 
 ### File details
 - [CalculateResultMean.py](./CalculateResultMean.py), [GetMedianComparisonResults.py](./GetMedianComparisonResults.py), [TransformResultToComparsion.py](./TransformResultToComparsion.py): Processed result data.
@@ -60,4 +58,6 @@ In summary, we recommend that software developers employ the O-Bagging algorithm
 - [SKESD_test.py](./SKESD_test.py): Process SKESD data.
 ![img.png](images/skesd-img.png)
 - [Wilcoxon_pvalue_cliff.py](./Wilcoxon_pvalue_cliff.py): The calculation of the Wilcoxon test and cliff value.
+
+## Citation
 
